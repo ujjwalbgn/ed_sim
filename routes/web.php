@@ -1,10 +1,12 @@
 <?php
 
 //TODO get home page
-
-Route::get('/', function (){
-    return 'WELCOME EDSIME ------HOME PAGE';
+Route::middleware('auth')->group(function() {
+    Route::get('/', function () {
+        return 'WELCOME EDSIME ------HOME PAGE';
+    });
 });
+
 
 Route::middleware('auth')->group(function(){
     Route::get('sim','SimController@index');
@@ -13,7 +15,7 @@ Route::middleware('auth')->group(function(){
     Route::post('/sim/patient/{patient}/med','SimController@medCheck');
 });
 
-Route::middleware('auth','instructor')->group(function (){
+Route::middleware('auth','instructor'and'admin')->group(function (){
     Route::get('patients/{patient}/meds','MedPatientController@index');
     Route::patch('/patients/{patient}/med/{med}','MedPatientController@update');
     Route::delete('/patients/{patient}/med/{med}','MedPatientController@destroy');

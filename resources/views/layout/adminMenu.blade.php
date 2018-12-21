@@ -1,4 +1,14 @@
 <!-- START NAV -->
+
+
+<!-- CSRF Token -->
+<meta name="csrf-token" content="{{ csrf_token() }}">
+<!-- Scripts -->
+<script src="{{ asset('js/app.js') }}" defer></script>
+
+
+
+
 <nav class="navbar is-info">
     <div class="container">
         <div class="navbar-brand">
@@ -62,10 +72,32 @@
                 <a class="navbar-item" target="_blank" href="/sim">
                     Simulator
                 </a>
+
             </div>
 
         </div>
     </div>
+
+
+    @guest
+        {{redirect('/')}}
+    @else
+    <div class="navbar-end">
+        <div class="navbar-item">
+            <div class="buttons">
+                <a class="button is-light">
+                    User: {{ Auth::user()->name }}
+                </a>
+                <a class="button" href="{{ route('logout') }}"
+                   onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                    {{ __('Logout') }}
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+    @endguest
 </nav>
 @include('layout.sessionMessage')
 <!-- END NAV -->

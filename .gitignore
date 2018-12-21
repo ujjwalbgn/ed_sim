@@ -10,4 +10,4 @@ Homestead.yaml
 npm-debug.log
 .env
 /dirt
-
+/resources/views/layout/analyticsGoogle.blade.php

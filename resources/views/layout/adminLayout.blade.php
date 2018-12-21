@@ -1,4 +1,3 @@
-{{--todo need to delete, only for testing--}}
     <!DOCTYPE html>
 <html>
 
@@ -11,8 +10,6 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
     <!-- Bulma Version 0.7.2-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" />
-    <link rel="stylesheet" type="text/css" href="../css/admin.css">
-
 </head>
 
 <body>
@@ -59,4 +56,5 @@
     });
 </script>
 </body>
+    @include('layout.analyticsGoogle')
 </html>
