@@ -11,9 +11,8 @@
 
 
 <section class="hero is-info">
-    <div class="hero-body">
-        <div class="container">
-            <div class="card">
+    @include('layout.adminMenu')
+
                 <div class="card-content">
                     <div class="content">
                         <div class="control has-icons-left has-icons-right">
@@ -27,9 +26,6 @@
                         </span>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
     </div>
 </section>
 

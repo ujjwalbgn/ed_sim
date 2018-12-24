@@ -72,16 +72,10 @@
                 <a class="navbar-item" target="_blank" href="/sim">
                     Simulator
                 </a>
-
             </div>
 
         </div>
     </div>
-
-
-    @guest
-        {{redirect('/')}}
-    @else
     <div class="navbar-end">
         <div class="navbar-item">
             <div class="buttons">
@@ -92,12 +86,13 @@
                    onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                     {{ __('Logout') }}
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                        @csrf
+                    </form>
                 </a>
             </div>
         </div>
     </div>
-    </div>
-    @endguest
 </nav>
 @include('layout.sessionMessage')
 <!-- END NAV -->
