@@ -16,7 +16,7 @@ Route::middleware('auth')->group(function(){
 });
 
 //Instructor can view these Routers
-Route::middleware('auth')->group(function (){
+Route::middleware('role:admin|instructor')->group(function (){
     Route::get('patients/{patient}/meds','MedPatientController@index');
     Route::patch('/patients/{patient}/med/{med}','MedPatientController@update');
     Route::delete('/patients/{patient}/med/{med}','MedPatientController@destroy');
@@ -26,11 +26,11 @@ Route::middleware('auth')->group(function (){
 });
 
 //Admin can only view this
-Route::middleware('auth')->group(function () {
+Route::middleware('role:admin')->group(function () {
     Route::resource('users', 'UserController');
-});
+    Route::resource('roles', 'RoleController');
 
+});
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');

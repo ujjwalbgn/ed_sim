@@ -11,7 +11,7 @@
 
 
 <section class="hero is-info">
-    @include('layout.adminMenu')
+    @include('layout.simMenu')
 
                 <div class="card-content">
                     <div class="content">

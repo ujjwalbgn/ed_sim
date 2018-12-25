@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\User;
+use Spatie\Permission\Models\Role;
+use Session;
+
 
 class UserController extends Controller
 {
@@ -58,7 +61,10 @@ class UserController extends Controller
      */
     public function edit($id)
     {
-        //
+        $user = User::findOrFail($id); //Get user with specified id
+        $roles = Role::get(); //Get all roles
+
+        return view('users.edit', compact('user', 'roles')); //pass user and roles data to view
     }
 
     /**
@@ -70,7 +76,30 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $user = User::findOrFail($id); //Get role specified by id
+
+        //Validate name, email and password fields
+        $this->validate($request, [
+            'name'=>'required|max:120',
+            'email'=>'required|email|unique:users,email,'.$id,
+            'password'=>'required|min:6|confirmed'
+        ]);
+
+        $input = $request->only(['name', 'email', bcrypt('password')]); //Retreive the name, email and password fields
+        $user->fill($input)->save();
+
+
+        $roles = $request['roles']; //Retreive all roles
+
+        if (isset($roles)) {
+            $user->roles()->sync($roles);  //If one or more role is selected associate user to roles
+        }
+        else {
+            $user->roles()->detach(); //If no role is selected remove exisiting role associated to a user
+        }
+        return redirect()->route('users.index')
+            ->with('flash_message',
+                'User successfully edited.');
     }
 
     /**
@@ -79,8 +108,9 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(User $user)
     {
-        //
+        $user->delete();
+        return redirect('/users')->with(['message' => 'User deleted successfully']);
     }
 }

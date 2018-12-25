@@ -9,6 +9,9 @@
             <a class="button is-link" href="/register">
                 <strong>Register New User</strong>
             </a>
+            <a class="button is-link" href="/roles">
+                <strong>Manage Roles</strong>
+            </a>
             @include('users.userTabel')
         </div>
     </div>
