@@ -6,7 +6,7 @@
 <meta name="_token" content="{{ csrf_token() }}">
 
 
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href={{asset("//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css")}}>
 @include('layout.sessionMessage')
 
 
