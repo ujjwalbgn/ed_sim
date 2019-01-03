@@ -34,20 +34,6 @@
                         <a class="navbar-item" href="/patients/create">
                             Create New Patient
                         </a>
-                        <hr class="navbar-divider">
-
-                        <a class="navbar-item">
-                            View Level 1
-                        </a>
-                        <a class="navbar-item">
-                            View Level 2
-                        </a>
-                        <a class="navbar-item">
-                            View Level 3
-                        </a>
-                        <a class="navbar-item">
-                            View Level 4
-                        </a>
                     </div>
                 </div>
                 <div class="navbar-item has-dropdown is-hoverable">
