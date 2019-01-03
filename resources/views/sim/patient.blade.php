@@ -1,5 +1,7 @@
 @extends('layout.adminLayout')
 @section('pageTitle', 'Patient`s Profile MAR Simulator')
+@include('layout.simMenu')
+
 @section('content')
     @include('layout.sessionMessage')
     <div class="content">
