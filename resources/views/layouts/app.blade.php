@@ -79,5 +79,6 @@
         </main>
     </div>
 </body>
-@include('layout.analyticsGoogle')
+{{--Google Analytics--}}
+@includeIf('helpers.googleAnalytics', [env('APP_ENV') => 'production'])
 </html>
