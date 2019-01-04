@@ -1,10 +1,6 @@
 <?php
 
-
-if (env('APP_ENV') === 'production') {
-    URL::forceScheme('https');
-}
-
+//TODO get home page
 Route::middleware('auth')->group(function() {
     Route::get('/', function () {
         return view('welcome');
