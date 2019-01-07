@@ -1,9 +1,9 @@
 @extends('layout.adminLayout')
 @section('content')
-<section class="hero is-fullheight">
+<section class="hero">
     <div class="hero-body">
         <div class="container has-text-centered">
-            <div class="columns">
+            <div>
                 <div class="column">
                     <h1 class="title">
                         Welcome to EdSime
