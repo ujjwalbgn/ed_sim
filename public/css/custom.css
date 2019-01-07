@@ -1,21 +1,7 @@
-.navbar-laravel {
-    background-color: #9e45bb;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
-  }
-  /* bulma css */
-  .button.is-info{
-    background-color: #9e45bb;
-  }
+/* bulma css */
   .button.is-info.is-active, .button.is-info:active {
     background-color: #c968e9;
  }
-  .button.is-primary{
-    background-color: #9e45bb;
-  }
   .button.is-primary.is-active, .button.is-primary:active {
     background-color: #c968e9;
  }
-/* nav bar */
-.navbar.is-info{
-  background-color: #c968e9;
-}
