@@ -6,13 +6,11 @@
 <meta name="_token" content="{{ csrf_token() }}">
 
 <link rel="stylesheet" href={{asset("//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css")}}>
-@include('layout.sessionMessage')
-
 
 <section class="hero is-info">
     @include('layout.simMenu')
-
-                <div class="card-content">
+    @include('layout.sessionMessage')
+    <div class="card-content">
                     <div class="content">
                         <div class="control has-icons-left has-icons-right">
                             <input class="input is-large" type="text" id="search" name="search"

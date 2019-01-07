@@ -33,7 +33,7 @@
                         {{$med->name}}
                     </a></th>
                 <th>
-                    {{$med->level}}
+                    {{$med->time}}
                 </th>
                 <th>
                     {{$med->barcode}}

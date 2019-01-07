@@ -36,5 +36,4 @@
         </div>
     </div>
 </nav>
-@include('layout.sessionMessage')
 <!-- END NAV -->

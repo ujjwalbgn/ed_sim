@@ -65,9 +65,9 @@ class SimController extends Controller
         //Check in med_patient relation table
         $exists = $med->patient->contains($patient->id);
         if ($exists == true) {
-            return redirect()->back()->with('message', $med->name . ' was given to ' . $patient->name);
+            return redirect()->back()->with('success', $med->name . ' was given to ' . $patient->name);
         } else {
-            return redirect('/sim')->with('message', $med->name . ' was not found in ' . $patient->name .
+            return redirect()->back()->with('warning', $med->name . ' was not found in ' . $patient->name .
                 '`s records. Please scan your Patient again.'
             );
         }
