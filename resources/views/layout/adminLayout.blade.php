@@ -10,6 +10,9 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
     <!-- Bulma Version 0.7.2-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" />
+    <!-- Custom css -->
+    <link href="{{ asset('css/custom.css') }}" rel="stylesheet" />
+
 </head>
 
 <body>
