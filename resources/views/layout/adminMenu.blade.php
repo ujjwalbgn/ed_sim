@@ -9,8 +9,8 @@
 
 
 
-<nav class="navbar is-info">
-    <div class="container">
+<nav class="navbar is-info" role="navigation">
+    <!-- <div class="container"> -->
         <div class="navbar-brand">
             <a class="navbar-item brand-text" href="../">
               <strong>Edsime</strong>
@@ -61,7 +61,7 @@
             </div>
 
         </div>
-    </div>
+    <!-- </div> -->
     <div class="navbar-end">
         <div class="navbar-item">
             <div class="buttons">
