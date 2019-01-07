@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Med;
 use App\Patient;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Database\Eloquent\ModelNotFoundException;
+
 
 use Illuminate\Http\Request;
 
@@ -61,14 +63,19 @@ class SimController extends Controller
             'barcode' => ['required', 'numeric', 'min:2']
         ]);
         $barcode = $attributes;
-        $med = Med::where('barcode', $barcode)->firstorfail();
+        try {
+            $med = Med::where('barcode', $barcode)->firstorfail();
+        }  catch (ModelNotFoundException $ex) {
+            return redirect()->back()->with('warning', 'Invalid Barcode for Medication. The barcode is not assigned to any medication in the system.'
+            );
+        }
         //Check in med_patient relation table
         $exists = $med->patient->contains($patient->id);
         if ($exists == true) {
             return redirect()->back()->with('success', $med->name . ' was given to ' . $patient->name);
         } else {
             return redirect()->back()->with('warning', $med->name . ' was not found in ' . $patient->name .
-                '`s records. Please scan your Patient again.'
+                '`s records. Please check again.'
             );
         }
     }
