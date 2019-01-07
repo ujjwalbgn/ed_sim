@@ -1,7 +1,16 @@
+.navbar-laravel{
+  background-color: #c968e9;
+}
 /* bulma css */
   .button.is-info.is-active, .button.is-info:active {
     background-color: #c968e9;
  }
   .button.is-primary.is-active, .button.is-primary:active {
     background-color: #c968e9;
+ }
+ .content{
+    margin-top: 50px;
+ }
+ .card-header{
+  background-color: rgb(213, 210, 214);
  }
