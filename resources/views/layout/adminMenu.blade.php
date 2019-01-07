@@ -6,9 +6,6 @@
 <!-- Scripts -->
 <script src="{{ asset('js/app.js') }}" defer></script>
 
-
-
-
 <nav class="navbar is-info" role="navigation">
     <!-- <div class="container"> -->
         <div class="navbar-brand">
