@@ -5,7 +5,7 @@
 
 <meta name="_token" content="{{ csrf_token() }}">
 
-<link rel="stylesheet" href={{asset("//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css")}}>
+    <link rel="stylesheet" href={{asset("//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css")}}>
 
 <section class="hero is-info">
     @include('layout.simMenu')
@@ -25,30 +25,34 @@
                     </div>
     </div>
 </section>
+<div class="container container-top">
+    <div class="container">
+        <div class="content">
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
 
-<table class="table table-bordered table-hover">
+                <thead>
 
-    <thead>
+                <tr>
+                    <th>Name</th>
 
-    <tr>
-        <th>Name</th>
+                    <th>Level</th>
 
-        <th>Level</th>
+                    <th>DOB</th>
 
-        <th>DOB</th>
+                    <th>Select</th>
 
-        <th>Select</th>
+                </tr>
 
-    </tr>
+                </thead>
 
-    </thead>
+                <tbody>
 
-    <tbody>
+                </tbody>
 
-    </tbody>
-
-</table>
-
+            </table>
+        </div>
+    </div>
+</div>
 
 <script type="text/javascript">
 

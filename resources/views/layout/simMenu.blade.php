@@ -1,7 +1,7 @@
 <meta name="csrf-token" content="{{ csrf_token() }}">
 <script src="{{ asset('js/app.js') }}" defer></script>
-<nav class="navbar is-info">
-    <div class="container">
+<nav class="navbar is-info" role="navigation">
+    <!-- <div class="container"> -->
         <div class="navbar-brand">
             <a class="navbar-item brand-text" href="../">
               <strong>Edsime</strong>
@@ -17,7 +17,7 @@
                     Scan Patient
                 </a>
         </div>
-    </div>
+    <!-- </div> -->
     <div class="navbar-end">
         <div class="navbar-item">
             <div class="buttons">
