@@ -20,6 +20,9 @@
     
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/customapp.css') }}" rel="stylesheet">
+
+    @include('helpers.googleAnalytics')
+
 </head>
 <body>
     <div id="app">
@@ -81,6 +84,4 @@
         </main>
     </div>
 </body>
-{{--Google Analytics--}}
-@includeIf('helpers.googleAnalytics', [env('APP_ENV') => 'production'])
 </html>
