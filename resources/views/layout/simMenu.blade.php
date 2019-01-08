@@ -3,7 +3,7 @@
 <nav class="navbar is-info">
     <div class="container">
         <div class="navbar-brand">
-            <a class="navbar-item brand-text" href="../">
+            <a class="navbar-item brand-text" href="/">
               <strong>Edsime</strong>
             </a>
             <div class="navbar-burger burger" data-target="navMenu">
