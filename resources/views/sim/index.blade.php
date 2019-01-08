@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href={{asset("//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css")}}>
 
-<section class="hero is-info">
+<section class="is-info">
     @include('layout.simMenu')
     @include('layout.sessionMessage')
     <div class="card-content">
