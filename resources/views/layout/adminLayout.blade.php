@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" />
     <!-- Custom css -->
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet" />
+    @include('helpers.googleAnalytics')
 
 </head>
 
@@ -59,5 +60,4 @@
     });
 </script>
 </body>
-{{--Google Analytics--}}
-@includeIf('helpers.googleAnalytics', [env('APP_ENV') => 'production'])</html>
+</html>

@@ -25,8 +25,7 @@
                     </div>
     </div>
 </section>
-<div class="container container-top">
-    <div class="container">
+
         <div class="content">
             <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
 
@@ -51,8 +50,7 @@
 
             </table>
         </div>
-    </div>
-</div>
+
 
 <script type="text/javascript">
 
