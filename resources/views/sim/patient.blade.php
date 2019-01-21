@@ -49,6 +49,7 @@
             </form>
         </div>
         </div>
+        <h5 class="is-5">Scheduled Medication</h5>
     <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
         <thead>
         <tr>
@@ -59,7 +60,7 @@
                 Date/Time RN Verified
             </th>
             <th>
-                Scheduled Medication
+                Medication
             </th>
             <th bgcolor="gray">
                  Yesterday
@@ -75,24 +76,24 @@
         </tr>
         </thead>
         <tbody>
-        @foreach($meds as $index => $med)
+        @foreach($scheduledMeds as $index => $scheduledMeds)
             <tr>
                 {{--<th>{{$index+1}}</th>--}}{{-- (+1) beacuse $index starts from 0 --}}
-                <th>{{$med->dateTimeRNVerified}}</th>
+                <th>{{$scheduledMeds->dateTimeRNVerified}}</th>
                 <th>
-                {{$med->name}}
+                {{$scheduledMeds->name}}
                     <div class="content is-small">
-                    {{$med->description}}
+                    {{$scheduledMeds->description}}
                     </div>
                 </th>
                 <th bgcolor="gray">
-                    {{$med->timeYesterday}}
+                    {{$scheduledMeds->timeYesterday}}
                 </th>
                 <th>
-                    {{$med->timeToday}}
+                    {{$scheduledMeds->timeToday}}
                 </th>
                 <th>
-                    {{$med->timeTomorrow}}
+                    {{$scheduledMeds->timeTomorrow}}
                 </th>
                 {{--<th>--}}
                     {{--{{$med->description}}--}}
@@ -101,5 +102,59 @@
         </tbody>
         @endforeach
     </table>
+        <br>
+        <h5 class="is-5">PRN Medication</h5>
+        <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+            <thead>
+            <tr>
+                {{--<th>--}}
+                {{--No.--}}
+                {{--</th>--}}
+                <th>
+                    Date/Time RN Verified
+                </th>
+                <th>
+                    Medication
+                </th>
+                <th bgcolor="gray">
+                    Yesterday
+                </th>
+                <th>
+                    Today
+                </th>
+                <th>
+                    Tomorrow
+                </th>
+                {{--<th>Description</th>--}}
+
+            </tr>
+            </thead>
+            <tbody>
+            @foreach($prnMeds as $index => $prnMeds)
+                <tr>
+                    {{--<th>{{$index+1}}</th>--}}{{-- (+1) beacuse $index starts from 0 --}}
+                    <th>{{$prnMeds->dateTimeRNVerified}}</th>
+                    <th>
+                        {{$prnMeds->name}}
+                        <div class="content is-small">
+                            {{$prnMeds->description}}
+                        </div>
+                    </th>
+                    <th bgcolor="gray">
+                        {{$prnMeds->timeYesterday}}
+                    </th>
+                    <th>
+                        {{$prnMeds->timeToday}}
+                    </th>
+                    <th>
+                        {{$prnMeds->timeTomorrow}}
+                    </th>
+                    {{--<th>--}}
+                    {{--{{$med->description}}--}}
+                    {{--</th>--}}
+                </tr>
+            </tbody>
+            @endforeach
+        </table>
     </div>
 @endsection

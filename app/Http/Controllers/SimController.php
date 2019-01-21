@@ -54,7 +54,10 @@ class SimController extends Controller
     public function showPatient(Patient $patient)
     {
         $meds = $patient->med;
-        return view('sim.patient', compact('patient', 'meds'));
+        $scheduledMeds = $meds->where('type','=','Scheduled Medication');
+        $prnMeds = $meds->where('type','=','PRN Medication');
+        return view('sim.patient', compact('patient', 'scheduledMeds','prnMeds'));
+
     }
 
     public function medCheck(Patient $patient, Request $request)
