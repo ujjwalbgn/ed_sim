@@ -18,10 +18,10 @@
                     <th>
                         Medication Name
                     </th>
-                    <th>
-                        Time
-                    </th>
-                    <th>Description</th>
+                    {{--<th>--}}
+                        {{--Time--}}
+                    {{--</th>--}}
+                    {{--<th>Description</th>--}}
                     <th>
                     </th>
                 </tr>
@@ -33,12 +33,12 @@
                     <th><a href="/meds/{{$med->id}}">
                             {{$med->name}}
                         </a></th>
-                        <th>
-                            {{$med->time}}
-                        </th>
-                        <th>
-                            {{$med->description}}
-                        </th>
+                        {{--<th>--}}
+                            {{--{{$med->time}}--}}
+                        {{--</th>--}}
+                        {{--<th>--}}
+                            {{--{{$med->description}}--}}
+                        {{--</th>--}}
                         <th>
                         <form method="post" action="/patients/{{$patient->id}}/med/{{$med->id}}">
                                 @method('DELETE')

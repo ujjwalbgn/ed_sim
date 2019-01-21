@@ -9,10 +9,17 @@ class Patient extends Model
     protected $fillable=[
         'name',
         'level',
+        'diagnosis',
+        'provider',
+        'age',
         'dob',
+        'gender',
+        'height',
+        'weight',
         'allergies',
+        'sensitivity',
         'description',
-        'barcode'
+        'barcode',
     ];
 
     //Patient belongs to Med
