@@ -8,9 +8,13 @@ class Med extends Model
 {
     protected $fillable=[
         'name',
-        'time',
+        'type',
         'description',
-        'barcode'
+        'barcode',
+        'dateTimeRNVerified',
+        'timeYesterday',
+        'timeToday',
+        'timeTomorrow',
     ];
 
     //Med belongs to Patient
@@ -18,8 +22,6 @@ class Med extends Model
     {
         return $this->belongsToMany(Patient::class);
     }
-
-
 }
 
 

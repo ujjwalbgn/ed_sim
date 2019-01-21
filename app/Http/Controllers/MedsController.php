@@ -38,7 +38,11 @@ class MedsController extends Controller
     {
         $attributes=  request()->validate([
             'name' => ['required','min:2','max:200'],
-            'time' => [],
+            'type' => ['required'],
+            'dateTimeRNVerified' => [],
+            'timeYesterday' => [],
+            'timeToday' => [],
+            'timeTomorrow' => [],
             'description' => [],
             'barcode' => ['required','numeric','min:2']
         ]);
@@ -83,7 +87,11 @@ class MedsController extends Controller
 
         $this->validate($request,[
             'name' => ['required','min:2','max:200'],
-            'time'=>[],
+            'type' => ['required'],
+            'dateTimeRNVerified' => [],
+            'timeYesterday' => [],
+            'timeToday' => [],
+            'timeTomorrow' => [],
             'description' => [],
             'barcode' => ['required','numeric','min:2']
         ]);

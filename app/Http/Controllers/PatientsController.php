@@ -39,8 +39,15 @@ class PatientsController extends Controller
         $attributes=  request()->validate([
             'name' => ['required','min:2','max:200'],
             'level' => ['required'],
-            'allergies' => [],
+            'diagnosis' => [],
+            'provider' => [],
+            'age' => [],
             'dob' => [],
+            'gender' => [],
+            'height' => [],
+            'weight' => [],
+            'sensitivity' => [],
+            'allergies' => [],
             'description' => [],
             'barcode' => ['required','numeric','min:2']
         ]);
@@ -88,7 +95,14 @@ class PatientsController extends Controller
         $this->validate($request,[
             'name' => ['required','min:2','max:200'],
             'level' => ['required'],
+            'diagnosis' => [],
+            'provider' => [],
+            'age' => [],
             'dob' => [],
+            'gender' => [],
+            'height' => [],
+            'weight' => [],
+            'sensitivity' => [],
             'allergies' => [],
             'description' => [],
             'barcode' => ['required','numeric','min:2']

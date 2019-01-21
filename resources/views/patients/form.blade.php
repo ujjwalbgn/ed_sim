@@ -13,10 +13,52 @@
     </div>
 </div>
 <div class="field">
+    <label class="label" for="diagnosis">Diagnosis</label>
+    <div class="control">
+        <input type="text" name="diagnosis" class="input {{$errors->has('diagnosis') ? 'is-danger' : ''}}" required
+               value= @if(isset($patient))"{{$patient->diagnosis}}"@else"{{old('diagnosis')}}"@endif>
+    </div>
+</div>
+<div class="field">
+    <label class="label" for="provider">Provider</label>
+    <div class="control">
+        <input type="text" name="provider" class="input {{$errors->has('provider') ? 'is-danger' : ''}}" required
+               value= @if(isset($patient))"{{$patient->provider}}"@else"{{old('provider')}}"@endif>
+    </div>
+</div>
+<div class="field">
     <label class="label" for="dob">Date of Birth</label>
     <div class="control">
         <input type="text" name="dob" class="input {{$errors->has('dob') ? 'is-danger' : ''}}"
                value= @if(isset($patient))"{{$patient->dob}}"@else"{{old('dob')}}"@endif>
+    </div>
+</div>
+<div class="field">
+    <label class="label" for="age">Age</label>
+    <div class="control">
+        <input type="text" name="age" class="input {{$errors->has('age') ? 'is-danger' : ''}}"
+               value= @if(isset($patient))"{{$patient->age}}"@else"{{old('age')}}"@endif>
+    </div>
+</div>
+<div class="field">
+    <label class="label" for="gender">Gender</label>
+    <div class="control">
+        <input type="text" name="gender" class="input {{$errors->has('gender') ? 'is-danger' : ''}}"
+               value= @if(isset($patient))"{{$patient->gender}}"@else"{{old('gender')}}"@endif>
+    </div>
+</div>
+<div class="field">
+    <label class="label" for="height">Height</label>
+    <div class="control">
+        <input type="text" name="height" class="input {{$errors->has('height') ? 'is-danger' : ''}}"
+               value= @if(isset($patient))"{{$patient->height}}"@else"{{old('height')}}"@endif>
+    </div>
+</div>
+<div class="field">
+    <label class="label" for="weight">Weight</label>
+    <div class="control">
+        <input type="text" name="weight" class="input {{$errors->has('weight') ? 'is-danger' : ''}}"
+               value= @if(isset($patient))"{{$patient->weight}}"@else"{{old('weight')}}"@endif>
     </div>
 </div>
 <div class="field">
@@ -27,13 +69,20 @@
     </div>
 </div>
 <div class="field">
+    <label class="label" for="sensitivity">Sensitivity</label>
+    <div class="control">
+        <input type="text" name="sensitivity" class="input {{$errors->has('sensitivity') ? 'is-danger' : ''}}"
+               value= @if(isset($patient))"{{$patient->sensitivity}}"@else"{{old('sensitivity')}}"@endif>
+    </div>
+</div>
+<div class="field">
     <label class="label" for="description">Description</label>
     <div class="control">
         <textarea type="text" name="description" class="textarea {{$errors->has('description') ? 'is-danger' : ''}}">@if(isset($patient)){{$patient->description}}@else{{old('description')}}@endif</textarea>
     </div>
 </div>
 <div class="field">
-    <label class="label" for="barcode">Barcode</label>
+    <label class="label" for="barcode">MR# (Barcode)</label>
     <div class="control">
         <input type="text" name="barcode" class="input {{$errors->has('barcode') ? 'is-danger' : ''}}" required
                value= @if(isset($patient))"{{$patient->barcode}}"@else"{{old('barcode')}}">@endif

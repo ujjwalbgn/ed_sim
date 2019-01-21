@@ -16,7 +16,11 @@ class CreateMedsTable extends Migration
         Schema::create('meds', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->string('time')->nullable();
+            $table->string('type')->nullable();
+            $table->string('dateTimeRNVerified')->nullable();
+            $table->string('timeYesterday')->nullable();
+            $table->string('timeToday')->nullable();
+            $table->string('timeTomorrow')->nullable();
             $table->mediumtext('description')->nullable();
             $table->string('barcode');
             $table->timestamps();
