@@ -4,7 +4,7 @@
 
 @section('content')
     @include('layout.sessionMessage')
-    <div class="content">
+    <div class="content is-small">
     <h1 class="title">Patient's Profile</h1>
         <table class="table is-narrow is-hoverable is-fullwidth">
             <thead>
@@ -21,7 +21,6 @@
             </thead>
         </table>
         <table>
-            <thead>
             <tr>
                 <th>Date of Birth: {{$patient->dob}}</th>
                 <th>Age: {{$patient->age}}</th>
@@ -29,7 +28,12 @@
                 <th>Height: {{$patient->height}}</th>
                 <th>Weight: {{$patient->weight}}</th>
             </tr>
-            </thead>
+        </table>
+        <hr>
+        <table>
+            <tr><th>Know Allergies: {{$patient->allergies}}</th>
+                <th>Know Sensitivity: {{$patient->sensitivity}}</th></tr>
+
         </table>
         {{--<div class="tags has-addons">--}}
             {{--<span class="tag is-medium">Allergies</span>--}}
