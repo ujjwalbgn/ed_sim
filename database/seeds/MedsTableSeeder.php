@@ -16,36 +16,36 @@ class MedsTableSeeder extends Seeder
         DB::table('meds')->insert([
             [
                 'id' => '1',
-                'name' => 'Multivitamin tab 1 PO ' ,
+                'name' => 'Multivitamin tab 1 PO Daily' ,
                 'type' => 'Scheduled Medication',
                 'dateTimeRNVerified' => 'Yesterday KP',
                 'timeYesterday' => '',
                 'timeToday' => '0900',
                 'timeTomorrow' => '0900',
-                'description' => 'Daily',
+                'description' => '',
                 'barcode' => '101'
             ]
             ,
             [
                 'id' => '2',
-                'name' => 'Enoxaparin 40 mg SubCut',
+                'name' => 'Enoxaparin 40 mg SubCut daily',
                 'type' => 'Scheduled Medication',
                 'dateTimeRNVerified' => 'Yesterday KP',
                 'timeYesterday' => '',
                 'timeToday' => '0900',
                 'timeTomorrow' => '0900',
-                'description' => 'daily',
+                'description' => '',
                 'barcode' => '102'
             ],
             [
                 'id' => '3',
-                'name' => '0.9% Sodium Chloride IV',
+                'name' => '0.9% Sodium Chloride IV at 75mL/hr',
                 'type' => 'Scheduled Medication',
                 'dateTimeRNVerified' => 'Yesterday KP',
                 'timeYesterday' => '',
                 'timeToday' => '0400 KB',
                 'timeTomorrow' => '',
-                'description' => 'at 75mL/hr',
+                'description' => '',
                 'barcode' => '103'
             ],
             [
@@ -61,24 +61,24 @@ class MedsTableSeeder extends Seeder
             ],
             [
                 'id' => '5',
-                'name' => 'Acetaminophen 500 mg ',
+                'name' => 'Acetaminophen 500 mg PO every 4 hour PRN Pain less than or equal to 4 on 0-10 pain scale',
                 'type' => 'PRN Medication',
                 'dateTimeRNVerified' => 'Yesterday KP',
                 'timeYesterday' => '',
                 'timeToday' => '0400 KB',
                 'timeTomorrow' => '',
-                'description' => 'PO every 4 hour PRN Pain less than or equal to 4 on 0-10 pain scale',
+                'description' => '',
                 'barcode' => '103'
             ],
             [
                 'id' => '6',
-                'name' => 'Acetaminophen 500 mg / Hydrocodone 5mg 1 tablet',
+                'name' => 'Acetaminophen 500 mg / Hydrocodone 5mg 1 tablet PO every 4 hour PRN pain 5 to 7 on a 0-10 pain scale',
                 'type' => 'PRN Medication',
                 'dateTimeRNVerified' => 'Yesterday KP',
                 'timeYesterday' => '',
                 'timeToday' => '0400 KB',
                 'timeTomorrow' => '',
-                'description' => 'PO every 4 hour PRN pain 5 to 7 on a 0-10 pain scale',
+                'description' => '',
                 'barcode' => '103'
             ],
             [
