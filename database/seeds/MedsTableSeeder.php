@@ -81,7 +81,51 @@ class MedsTableSeeder extends Seeder
                 'description' => 'PO every 4 hour PRN pain 5 to 7 on a 0-10 pain scale',
                 'barcode' => '103'
             ],
-
+            [
+                'id' => '7',
+                'name' => 'IV saline lock; Flush with 0.9% NS every 8 hours per protocol',
+                'type' => 'Scheduled Medication',
+                'dateTimeRNVerified' => 'Yesterday JW',
+                'timeYesterday' => '',
+                'timeToday' => '0100 JW || 0900 || 1700',
+                'timeTomorrow' => '',
+                'description' => '',
+                'barcode' => '104'
+            ],
+            [
+                'id' => '8',
+                'name' => 'Acetaminophen 650 mg PO every 4 hours PRN pain 4 or less on 0-10 pain scale',
+                'type' => 'PRN Medication',
+                'dateTimeRNVerified' => 'Yesterday JW',
+                'timeYesterday' => '',
+                'timeToday' => '',
+                'timeTomorrow' => '',
+                'description' => '',
+                'barcode' => '105'
+            ],
+            [
+                'id' => '9',
+                'name' => 'Imitrex 100 mg PO BID PRN for migraine- May use own Imitrex for migraine if needed',
+                'type' => 'PRN Medication',
+                'dateTimeRNVerified' => 'Yesterday JW',
+                'timeYesterday' => '',
+                'timeToday' => '',
+                'timeTomorrow' => '',
+                'description' => '',
+                'barcode' => '106'
+            ],
+            [
+                'id' => '10',
+                'name' => 'Lorazepam 4 mg IVP, given at 2 mg per minute- Give 1 dose for
+                           seizure activity PRN and notify HCP immediately for any change in condition',
+                'type' => 'PRN Medication',
+                'dateTimeRNVerified' => 'Yesterday JW',
+                'timeYesterday' => '',
+                'timeToday' => '',
+                'timeTomorrow' => '',
+                'description' => '',
+                'barcode' => '107'
+            ],
         ]);
     }
 }
