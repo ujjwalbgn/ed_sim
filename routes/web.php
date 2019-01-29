@@ -20,12 +20,20 @@ Route::middleware('auth')->group(function(){
 
 //Instructor can view these Routers
 Route::middleware('role:admin|instructor')->group(function (){
+    //MedPatients
     Route::get('patients/{patient}/meds','MedPatientController@index');
     Route::patch('/patients/{patient}/med/{med}','MedPatientController@update');
     Route::delete('/patients/{patient}/med/{med}','MedPatientController@destroy');
+    
+    //PatientSignatures
+    Route::get('patients/{patient}/signatures','PatientSignatureController@index');
+    Route::patch('/patients/{patient}/signature/{signature}','PatientSignatureController@update');
+    Route::delete('/patients/{patient}/signature/{signature}','PatientSignatureController@destroy');
+    
     Route::get('/barcode', 'BarcodeController@index');
     Route::resource('patients','PatientsController');
     Route::resource('meds','MedsController');
+    Route::resource('/signature','SignatureController');
 });
 
 //Admin can only view this

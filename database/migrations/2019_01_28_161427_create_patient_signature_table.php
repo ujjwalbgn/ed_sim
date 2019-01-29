@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateMedPatientTable extends Migration
+class CreatePatientSignatureTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,12 @@ class CreateMedPatientTable extends Migration
      */
     public function up()
     {
-        Schema::create('med_patient', function (Blueprint $table) {
+        Schema::create('patient_signature', function (Blueprint $table) {
             $table->increments('id');
-            $table->unsignedInteger('med_id');
-            $table->foreign('med_id')->references('id')->on('meds')->ondelete('cascade');
             $table->unsignedInteger('patient_id');
             $table->foreign('patient_id')->references('id')->on('patients')->ondelete('cascade');
+            $table->unsignedInteger('signature_id');
+            $table->foreign('signature_id')->references('id')->on('signatures')->ondelete('cascade');
             $table->timestamps();
         });
     }
@@ -30,6 +30,6 @@ class CreateMedPatientTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('med_patient');
+        Schema::dropIfExists('patient_signature');
     }
 }

@@ -65,7 +65,9 @@ class PatientsController extends Controller
     public function show(Patient $patient)
     {
         $meds = $patient->med;
-        return view('patients.show', compact('patient','meds'));
+        $signatures =$patient->signature;
+
+        return view('patients.show', compact('patient','meds','signatures'));
     }
 
     /**

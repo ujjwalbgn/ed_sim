@@ -56,7 +56,8 @@ class SimController extends Controller
         $meds = $patient->med;
         $scheduledMeds = $meds->where('type','=','Scheduled Medication');
         $prnMeds = $meds->where('type','=','PRN Medication');
-        return view('sim.patient', compact('patient', 'scheduledMeds','prnMeds'));
+        $signatures = $patient->signature;
+        return view('sim.patient', compact('patient', 'scheduledMeds','prnMeds','signatures'));
 
     }
 
