@@ -43,7 +43,7 @@
                         <form method="post" action="/patients/{{$patient->id}}/signature/{{$signature->id}}">
                                 @method('DELETE')
                                 @csrf
-                                        <button type="submit" class="button is-danger is-outlined">Remove signatureication </button>
+                                        <button type="submit" class="button is-danger is-outlined">Remove Signature </button>
                             </form></th>
                 </tr>
                 </tbody>

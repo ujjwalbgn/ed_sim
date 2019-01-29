@@ -34,6 +34,19 @@
                     </div>
                 </div>
                 <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link" href="/patients">
+                        Record Signatures
+                    </a>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="/signature">
+                            View All Signature
+                        </a>
+                        <a class="navbar-item" href="/signature/create">
+                            Create New Signature
+                        </a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
                     <a class="navbar-link" href="/meds">
                         Medication
                     </a>

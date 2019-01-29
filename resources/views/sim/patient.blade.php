@@ -162,6 +162,7 @@
         </table>
         @if(isset($signatures))
             <hr>
+        Signatures
             <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
                 <thead>
                 <tr>
@@ -185,4 +186,7 @@
             </table>
         @endif
     </div>
+    <br>
+    <br>
+    <br>
 @endsection
