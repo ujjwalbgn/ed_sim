@@ -27,4 +27,9 @@ class Patient extends Model
     {
         return $this->belongsToMany(Med::class);
     }
+
+    public function signature()
+    {
+        return $this->belongsToMany(Signature::class);
+    }
 }

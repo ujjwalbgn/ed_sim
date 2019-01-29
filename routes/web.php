@@ -26,6 +26,7 @@ Route::middleware('role:admin|instructor')->group(function (){
     Route::get('/barcode', 'BarcodeController@index');
     Route::resource('patients','PatientsController');
     Route::resource('meds','MedsController');
+    Route::resource('/signature','SignatureController');
 });
 
 //Admin can only view this
