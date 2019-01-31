@@ -1,14 +1,14 @@
 @extends('layout.adminLayout')
 @section('content')
-<section class="hero">
-    <div class="hero-body">
-        <div class="container has-text-centered">
-            <div>
-                <div class="column">
-                    <h1 class="title">
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+        <!-- <div class="jumbotron"> -->
+            <h3 class="text-center">
+                    <p class="title">
                         Welcome to EdSime
-                    </h1>
-                    <h2 class="subtitle">
+                    </p>
+                    <p class="subtitle">
                         You are Logged in as
                         <strong>
                             @role('admin')
@@ -25,31 +25,37 @@
                                 @endrole
                             @endrole
                         </strong>
-                    </h2>
-                </div>
-            </div>
-            <div class="columns">
+                    </p>
+			</h3>
+			<div class="row">
                 @role('admin')
-                <div class="column">
-                    <a class="button is-info is-medium" href="/users">
-                        Admin Control
+                <div class="col-sm-12 col-md-12 col-lg-4">
+                <p>
+                    <a href="/users"> 
+                        <button type="button" class="btn btn-primary btn-md btn-block" href="/users" >Admin Control</button>
                     </a>
+                </p>
                 </div>
                 @endrole
                 @hasanyrole('admin|instructor')
-                <div class="column">
-                    <a class="button is-info is-medium" href="/patients">
-                        Edit Patients and Medication
+                <div class="col-sm-12 col-md-12 col-lg-4">
+                <p>
+                    <a href="/patients">
+                        <button type="button" class="btn btn-primary btn-md btn-block" href="/patients" >Edit Patients and Medication</button>
                     </a>
+                </p>
                 </div>
                 @endrole
-                <div class="column">
-                    <a class="button is-primary is-medium" href="/sim">
-                        Open Simulator
+                <div class="col-sm-12 col-md-12 col-lg-4">
+                <p>
+                    <a href="/sim">
+                        <button type="button" class="btn btn-info btn-block" href="/sim" >Open Simulator</button>
                     </a>
+                </p>
                 </div>
-            </div>
+			</div>
+		<!-- </div> -->
         </div>
-    </div>
-</section>
+	</div>
+</div>
 @endsection

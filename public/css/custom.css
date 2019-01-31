@@ -1,5 +1,5 @@
 /* bulma css */
-  .button.is-info.is-active, .button.is-info:active {
+  /* .button.is-info.is-active, .button.is-info:active {
     background-color: #c968e9;
  }
   .button.is-primary.is-active, .button.is-primary:active {
@@ -11,4 +11,18 @@
  }
  .card-header{
   background-color: rgb(213, 210, 214);
- }
+ } */
+ /* **** */
+/* .hm-gradient {
+   background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+}
+.darken-grey-text {
+   color: #2E2E2E;
+}
+
+.navbar .dropdown-menu a:hover {
+   color: #616161 !important;
+}
+.darken-grey-text {
+   color: #2E2E2E;
+} */
