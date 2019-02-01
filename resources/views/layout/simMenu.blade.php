@@ -1,5 +1,21 @@
 <meta name="csrf-token" content="{{ csrf_token() }}">
 <script src="{{ asset('js/app.js') }}" defer></script>
+
+
+<!-- ************************************************************************** -->
+<!-- <nav class="mb-4 navbar navbar-expand-lg navbar-light ">
+    <a class="navbar-brand" href="../"><strong>Edsime</strong></a>
+    <div class="navbar-collapse collapse justify-content-center order-2" id="collapsingNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Scan Patient</a>
+            </li>
+        </ul>
+    </div>
+    <span class="navbar-text small text-truncate mt-1 w-50 text-right order-1 order-md-last">always show</span>
+</nav> -->
+<!-- ************************************************************************** -->
+
 <nav class="navbar is-info" role="navigation">
     <!-- <div class="container"> -->
         <div class="navbar-brand">

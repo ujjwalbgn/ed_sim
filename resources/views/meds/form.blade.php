@@ -1,3 +1,68 @@
+<div class="form-row">
+    <div class="col-md-4 mb-3 md-form">
+      <label for="validationServer015">Date/Time RN Verified</label>
+      <input type="text" class="form-control is-valid" id="validationServer015" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4 mb-3 md-form">
+      <label for="validationServer025">Medication Name</label>
+      <input type="text" class="form-control is-valid" id="validationServer025" value="Otto" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4 mb-3 md-form">
+      <label for="validationServerUsername55">Medication Type</label>
+      <input type="text" class="form-control is-invalid" id="validationServerUsername55" required>
+      <div class="invalid-feedback">
+        Please choose a Diagnosis.
+      </div>
+    </div>
+  </div>
+  <!-- *** -->
+  <div class="form-row">
+    <div class="col-md-4 mb-3 md-form">
+      <label for="validationServer015">Medication Time Yesterday</label>
+      <input type="text" class="form-control is-valid" id="validationServer015" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4 mb-3 md-form">
+      <label for="validationServer015">Medication Time Today</label>
+      <input type="text" class="form-control is-valid" id="validationServer015" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4 mb-3 md-form">
+      <label for="validationServer025">Medication Time Tomorrow</label>
+      <input type="text" class="form-control is-valid" id="validationServer025" value="Otto" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+  </div>  
+  <!-- *** -->
+    <div class="form-row">
+        <div class="col-md-12 mb-3 md-form">
+            <label for="description">Description</label>
+            <textarea type="text" name="description" class="form-control" required></textarea>
+        </div>
+    </div>
+  <!-- *** -->
+  <div class="form-row">
+    <div class="col-md-12 mb-3 md-form">
+      <label for="validationServer015">Medication Barcode</label>
+      <input type="text" class="form-control is-valid" id="validationServer015" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+  </div>
+<!-- **************************************************** -->
 <div class="field">
     <label class="label" for="dateTimeRNVerified">Date/Time RN Verified</label>
     <div class="control">

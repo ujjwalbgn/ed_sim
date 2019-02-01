@@ -13,9 +13,9 @@
             <legend>View Only</legend>
             <section class="section">
                 <div class="container">
-    @include('meds.form')
-                </div></section>
+                    @include('meds.form')
+                </div>
+            </section>
         </fieldset>
-
     </form>
 @endsection

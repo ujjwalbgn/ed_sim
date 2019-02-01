@@ -7,7 +7,7 @@
     @include('layout.errors')
     <div class="container is-fluid">
 
-    <Form method="POST" action="/patients">
+    <form method="POST" action="/patients">
         @csrf
 
         @include('patients.form')
@@ -16,7 +16,8 @@
             <p class="control">
                 <button type="submit" class="button is-link">Create Patient</button>
                 <button type="reset" value="Reset" class="button is-light">Cancel</button>
+            </p>
         </div>
-    </Form>
+    </form>
     <div>
 @endsection

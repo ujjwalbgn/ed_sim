@@ -1,3 +1,147 @@
+<form>
+<div class="form-row">
+    <div class="col-md-12 mb-3 md-form">
+      <label for="validationServer015">Patient Name</label>
+      <input type="text" class="form-control is-valid" id="validationServer015" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    </div>
+  <div class="form-row">
+    <div class="col-md-4 mb-3 md-form">
+      <label for="validationServer025">Simulation Level</label>
+      <input type="text" class="form-control is-valid" id="validationServer025" value="Otto" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4 mb-3 md-form">
+      <label for="validationServerUsername55">Diagnosis</label>
+      <input type="text" class="form-control is-invalid" id="validationServerUsername55" required>
+      <div class="invalid-feedback">
+        Please choose a Diagnosis.
+      </div>
+    </div>
+    <div class="col-md-4 mb-3 md-form">
+      <label for="validationServer015">Provider</label>
+      <input type="text" class="form-control is-valid" id="validationServer015" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+  </div>
+  <!-- *** -->
+  <div class="form-row">
+    <div class="col-md-6 mb-3 md-form">
+      <label for="validationServer015">Allergies</label>
+      <input type="text" class="form-control is-valid" id="validationServer015" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-6 mb-3 md-form">
+      <label for="validationServer025">Sensitivity</label>
+      <input type="text" class="form-control is-valid" id="validationServer025" value="Otto" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+  </div>
+  
+  <!-- *** -->
+    <div class="form-row">
+        <div class="col-md-12 mb-3 md-form">
+            <label for="description">Description</label>
+            <textarea type="text" name="description" class="form-control" required></textarea>
+        </div>
+    </div>
+  <!-- *** -->
+  <div class="form-row">
+    <div class="col-md-2 mb-3 md-form">
+      <label for="validationServerUsername55">Age</label>
+      <input type="text" class="form-control is-invalid" id="validationServerUsername55" required>
+      <div class="invalid-feedback">
+        Please choose a age.
+      </div>
+    </div>
+    <div class="col-md-2 mb-3 md-form">
+      <label for="validationServer015">Gender</label>
+      <input type="text" class="form-control is-valid" id="validationServer015" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4 mb-3 md-form">
+      <label for="validationServer025">Date of Birth</label>
+      <input type="text" class="form-control is-valid" id="validationServer025" value="Otto" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-2 mb-3 md-form">
+      <label for="validationServer025">Height</label>
+      <input type="text" class="form-control is-valid" id="validationServer025" value="Otto" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-2 mb-3 md-form text-center">
+      <label for="validationServerUsername55">Weight</label>
+      <input type="text" class="form-control is-invalid" id="validationServerUsername55" required>
+      <div class="invalid-feedback">
+        Please choose a Weight.
+      </div>
+    </div>
+  </div>
+  <!-- *** -->
+  <div class="form-row">
+    <div class="col-md-12 mb-3 md-form">
+      <label for="validationServer015">MR# (Barcode)</label>
+      <input type="text" class="form-control is-valid" id="validationServer015" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+  </div>
+  <!-- <div class="form-row">
+    <div class="col-md-6 mb-3 md-form">
+      <label for="validationServer035">City</label>
+      <input type="text" class="form-control is-invalid" id="validationServer035" required>
+      <div class="invalid-feedback">
+        Please provide a valid city.
+      </div>
+    </div>
+    <div class="col-md-3 mb-3 md-form">
+      <label for="validationServer045">State</label>
+      <input type="text" class="form-control is-invalid" id="validationServer045" required>
+      <div class="invalid-feedback">
+        Please provide a valid state.
+      </div>
+    </div>
+    <div class="col-md-3 mb-3 md-form">
+      <label for="validationServer055">Zip</label>
+      <input type="text" class="form-control is-invalid" id="validationServer055" required>
+      <div class="invalid-feedback">
+        Please provide a valid zip.
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="form-check pl-0 md-form m-0">
+      <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck35" required>
+      <label class="form-check-label" for="invalidCheck35">
+        Agree to terms and conditions
+      </label>
+    </div>
+    <div class="invalid-feedback mt-3 ml-4">
+      You must agree before submitting.
+    </div>
+  </div> -->
+  <button class="btn btn-info" type="submit">Submit form</button>
+  <button class="btn btn-danger" type="button">Cancel</button>
+</form>
+<!-- **************************************************** -->
 <div class="field">
     <label class="label" for="name">Patient Name</label>
     <div class="control">

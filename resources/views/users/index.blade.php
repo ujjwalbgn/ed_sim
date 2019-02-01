@@ -3,19 +3,18 @@
 @extends('layout.adminMenu')
 
 @section('content')
-<div class="container">
+<div class="container-fluid">
     <div class="row justify-content-center">
         <div class="content">
             <h1 class="title">All Users</h1> 
             <p>
-            <a class="button is-link" href="/register">
-                <strong>Register New User</strong>
+            <a href="/register">
+                <button class="btn btn-success">Register New User</button>
             </a>
-           
-            <a class="button is-link" href="/roles">
-                <strong>Manage Roles</strong>
+            <a href="/roles">
+                <button class="btn btn-info">Manage Roles</button>
             </a>
-            </p><br>
+            </p>
             @include('users.userTabel')
         </div>
     </div>
