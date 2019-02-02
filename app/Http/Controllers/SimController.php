@@ -41,7 +41,7 @@ class SimController extends Controller
 
                         '<td>' . $patient->dob . '</td>' .
 
-                        '<td><a href="/sim/patient/' . $patient->id . '">Open Patient</a>' . '</td>';
+                        '<td><a href="/sim/patient/' . $patient->id . '"><strong>Open Patient</strong></a>' . '</td>';
 
                     '</tr>';
                 }

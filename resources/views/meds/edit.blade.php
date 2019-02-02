@@ -11,13 +11,13 @@
         <form method="post" action="/meds/{{$med->id}}" style="margin-bottom: 1em">
             @method('PATCH')
             @csrf
-            <div class="container">
+            <!-- <div class="container"> -->
                     @include('meds.form')
-                </div>
+            <!-- </div> -->
             <div class="field">
                 <div class="control">
-                    <button type="submit" class="button is-link">Update med</button>
-                    <a class="button is-danger" href="/meds">Cancel Changes</a>
+                    <button type="submit" class="btn btn-success">Update med</button>
+                    <a class="btn btn-secondary" href="/meds">Cancel Changes</a>
                 </div>
             </div>
     </form>
@@ -26,7 +26,7 @@
             @csrf
             <div class="field">
                 <div class="control">
-                    <button type="submit" class="button is-dark">Delete Medication</button>
+                    <button type="submit" class="btn btn-danger">Delete Medication</button>
                 </div>
             </div>
         </form>

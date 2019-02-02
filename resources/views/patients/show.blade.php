@@ -3,19 +3,17 @@
 @include('layout.adminMenu')
 
 @section('content')
-    <h1 class="title">{{$patient->name}}</h1><div class="buttons">
-        <div>
+    <h1 class="title">{{$patient->name}}</h1>
+    
+    <div class="container-fluid">
+        <div class="row">
             <form>
-                <a class="button is-link" href="/patients/{{$patient->id}}/edit">
+                <a class="btn btn-success" href="/patients/{{$patient->id}}/edit">
                     <strong>Edit Patient</strong>
                 </a>
-
                 <fieldset disabled>
                     <legend>View Only</legend>
-                    <section class="section">
-                        <div class="container">
                             @include('patients.form')
-                        </div></section>
                 </fieldset>
             </form>
 
@@ -23,4 +21,5 @@
             @include('patients.showPatientMeds')
             @include('patients.showPatientSignature')
         </div>
+    </div>
 @endsection

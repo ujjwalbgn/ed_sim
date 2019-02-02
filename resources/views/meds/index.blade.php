@@ -12,7 +12,7 @@
         <div class="col-md-12 col-lg-12">
             @if(isset($meds))
             <!-- <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth"> -->
-            <table class="table table-striped table-hover">
+            <table class="table table-hover table-nowrap">
                 <thead>
                     <tr>
                         <th>
@@ -27,11 +27,9 @@
                         <th>
                             Barcode
                         </th>
-                        <th>
-                        </th>
+                        <th></th>
                     </tr>
                 </thead>
-                
                 <tbody>
                 @foreach($meds as $index => $med)
                     <tr>
@@ -56,7 +54,6 @@
                     </tr>
                     @endforeach
                 </tbody>
-               
             </table>
             @else
                 No Medication Found

@@ -3,7 +3,14 @@
 @include('layout.simMenu')
 
 @section('content')
-    @include('layout.sessionMessage')
+<div class="container">
+        <div class="row">
+  		    <div class="col-lg-12">
+              <br>
+            @include('layout.sessionMessage')
+        </div>
+    </div>
+</div>
 <!-- ******************************************************************************************** -->
 <br>
     <div class="container">

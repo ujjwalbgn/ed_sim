@@ -4,16 +4,16 @@
 
 @section('content')
     <form>
-        <a class="button is-link" href="/signature/{{$signature->id}}/edit">
+        <a class="btn btn-success" href="/signature/{{$signature->id}}/edit">
             <strong>Edit</strong>
         </a>
         <fieldset disabled>
             <legend>View Only</legend>
-            <section class="section">
-                <div class="container">
-        @include('signature.form')
-                </div></section>
+                <section class="section">
+                    <div class="container">
+                        @include('signature.form')
+                    </div>
+                </section>
         </fieldset>
-
     </form>
 @endsection

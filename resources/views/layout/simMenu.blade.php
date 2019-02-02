@@ -1,23 +1,40 @@
 <meta name="csrf-token" content="{{ csrf_token() }}">
 <script src="{{ asset('js/app.js') }}" defer></script>
 
-
 <!-- ************************************************************************** -->
-<!-- <nav class="mb-4 navbar navbar-expand-lg navbar-light ">
-    <a class="navbar-brand" href="../"><strong>Edsime</strong></a>
-    <div class="navbar-collapse collapse justify-content-center order-2" id="collapsingNavbar">
-        <ul class="navbar-nav">
+<nav class="navbar navbar-expand-lg navbar-fixed-top navbar-light">
+    <div class="container">
+        <ul class="nav navbar-nav">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Scan Patient</a>
+    <a class="navbar-brand" href="../"><strong>Edsime</strong></a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav mx-auto">
+            <li class="nav-item"><a class="nav-link btn btn-info" href="/sim">Scan Patient</a></li>
+        </ul>
+        <ul class="nav navbar-nav">
+            <li class="nav-item">
+                <div class="buttons">
+                    <a class="button is-light">
+                    <span class="badge badge-pill badge-info">
+                        User: {{ Auth::user()->name }}
+                    </span>
+                    </a>
+                    <a class="button" href="{{ route('logout') }}"
+                        onclick="event.preventDefault();
+                        document.getElementById('logout-form').submit();"><i class="fa fa-user"></i> 
+                        {{ __('Logout') }}
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                            @csrf
+                        </form>
+                    </a>
+                </div>
             </li>
         </ul>
     </div>
-    <span class="navbar-text small text-truncate mt-1 w-50 text-right order-1 order-md-last">always show</span>
-</nav> -->
+</nav>
 <!-- ************************************************************************** -->
-
-<nav class="navbar is-info" role="navigation">
-    <!-- <div class="container"> -->
+<!-- <nav class="navbar is-info" role="navigation">
         <div class="navbar-brand">
             <a class="navbar-item brand-text" href="/">
               <strong>Edsime</strong>
@@ -33,7 +50,6 @@
                     Scan Patient
                 </a>
         </div>
-    <!-- </div> -->
     <div class="navbar-end">
         <div class="navbar-item">
             <div class="buttons">
@@ -42,7 +58,7 @@
                 </a>
                 <a class="button" href="{{ route('logout') }}"
                    onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
+                    document.getElementById('logout-form').submit();">
                     {{ __('Logout') }}
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                         @csrf
@@ -51,5 +67,5 @@
             </div>
         </div>
     </div>
-</nav>
+</nav> -->
 <!-- END NAV -->
