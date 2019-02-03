@@ -35,13 +35,14 @@ class SimController extends Controller
 
                     $output .= '<tr>' .
 
-                        '<td>' . $patient->name . '</td>' .
+                        '<td><a href="/sim/patient/' . $patient->id . '">' . $patient->name . '</a></td>' .
 
-                        '<td>' . $patient->level . '</td>' .
+                        '<td><a href="/sim/patient/' . $patient->id . '">' . $patient->level . '</a></td>' .
 
-                        '<td>' . $patient->dob . '</td>' .
+                        '<td><a href="/sim/patient/' . $patient->id . '">' . $patient->dob . '<a/></td>' .
 
                         '<td><a href="/sim/patient/' . $patient->id . '"><strong>Open Patient</strong></a>' . '</td>';
+
 
                     '</tr>';
                 }

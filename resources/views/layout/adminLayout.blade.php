@@ -17,6 +17,10 @@
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" /> -->
     <!-- Custom css -->
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet" />
+
+<!-- Scripts -->
+    <script src="{{ asset('js/app.js') }}" defer></script>
+
     @include('helpers.googleAnalytics')
 
 </head>
