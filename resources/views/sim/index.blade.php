@@ -12,12 +12,12 @@
         <div class="row">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-sm-12 col-md-12 col-lg-12">
-                        <div class="input-group input-group-sm mb-3">
-                            <div class="input-group-prepend">
+                    <div class="col-sm-12 col-md-12 col-lg-12 ">
+                        <div class="input-group input-group-sm mb-3 ">
+                            <div class="input-group-prepend ">
                                 <span class="input-group-text" id="inputGroup-sizing-sm"><i class="fa fa-search"></i>&nbsp </span>
                             </div>
-                            <input type="text" class="form-control" id="search" name="Scan" placeholder="Scan barcod or enter patient's name here" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                            <input type="text" class="form-control border border-primary" id="search" name="Scan" placeholder="Scan barcod or enter patient's name here" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
                         </div>
                     </div>
                 </div>

@@ -64,7 +64,7 @@
                     @include('layout.errors')
                     <form method="post" action="/sim/patient/{{$patient->id}}/med" style="margin-bottom: 1em">
                         @csrf
-                        <input class="input is-large {{$errors->has('level') ? 'is-danger' : ''}}" type="text" name="barcode" placeholder="Scanner Medication Barcode" required>
+                        <input class="input is-large {{$errors->has('level') ? 'is-danger' : ''}} border border-primary" type="text" name="barcode" placeholder="Scanner Medication Barcode" required>
                     </form>
                     </div>
                 </div>
