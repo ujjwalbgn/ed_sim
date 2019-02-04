@@ -6,7 +6,7 @@
 
     @include('layout.errors')
 
-    <div class="container is-fluid">
+    <div class="container-fluid">
         <form method="post" action="/signature/{{$signature->id}}" style="margin-bottom: 1em">
             @method('PATCH')
             @csrf
@@ -15,8 +15,8 @@
                 </div>
             <div class="field">
                 <div class="control">
-                    <button type="submit" class="button is-link">Update signature</button>
-                    <a class="button is-danger" href="/signature">Cancel Changes</a>
+                    <button type="submit" class="btn btn-success">Update signature</button>
+                    <a class="btn btn-secondary" href="/signature">Cancel Changes</a>
                 </div>
             </div>
     </form>
@@ -25,7 +25,7 @@
             @csrf
             <div class="field">
                 <div class="control">
-                    <button type="submit" class="button is-dark">Delete Signature</button>
+                    <button type="submit" class="btn btn-danger">Delete Signature</button>
                 </div>
             </div>
         </form>

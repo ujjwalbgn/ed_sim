@@ -1,14 +1,15 @@
 @if(isset($meds))
-            <hr>
-            <div class="columns">
-                <div class="column">
-                <h4 class="title is-4">Medication Assigned</h4>
+            <!-- <hr> -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4 class="title is-4">Medication Assigned</h4>
+                        <a class="btn btn-success btn-sm" href="/patients/{{$patient->id}}/meds">
+                            <strong>Edit Patient's Medications</strong>
+                        </a>
+                    </div>
                 </div>
-                <div class="column">
-                <a class="button is-link" href="/patients/{{$patient->id}}/meds">
-                <strong>Edit Patient's Medications</strong>
-            </a>
-                </div></div>
+            </div>
             <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
                 <thead>
                 <tr>
@@ -43,7 +44,7 @@
                         <form method="post" action="/patients/{{$patient->id}}/med/{{$med->id}}">
                                 @method('DELETE')
                                 @csrf
-                                        <button type="submit" class="button is-danger is-outlined">Remove medication </button>
+                                        <button type="submit" class="btn btn-danger btn-sm">Remove medication </button>
                             </form></th>
                 </tr>
                 </tbody>

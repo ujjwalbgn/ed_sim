@@ -3,7 +3,14 @@
 @include('layout.simMenu')
 
 @section('content')
-    @include('layout.sessionMessage')
+<div class="container">
+        <div class="row">
+  		    <div class="col-lg-12">
+              <br>
+            @include('layout.sessionMessage')
+        </div>
+    </div>
+</div>
 <!-- ******************************************************************************************** -->
 <br>
     <div class="container">
@@ -57,7 +64,7 @@
                     @include('layout.errors')
                     <form method="post" action="/sim/patient/{{$patient->id}}/med" style="margin-bottom: 1em">
                         @csrf
-                        <input class="input is-large {{$errors->has('level') ? 'is-danger' : ''}}" type="text" name="barcode" placeholder="Scanner Medication Barcode" required>
+                        <input class="input is-large {{$errors->has('level') ? 'is-danger' : ''}} border border-primary" type="text" name="barcode" placeholder="Scanner Medication Barcode" required>
                     </form>
                     </div>
                 </div>

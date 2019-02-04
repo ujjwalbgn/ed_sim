@@ -2,22 +2,29 @@
 @include('layout.adminMenu')
 
 @section('content')
-    <h1 class="title">Create a New Patient</h1>
-
-    @include('layout.errors')
-    <div class="container is-fluid">
-
-    <form method="POST" action="/patients">
-        @csrf
-
-        @include('patients.form')
-
-        <div class="field">
-            <p class="control">
-                <button type="submit" class="button is-link">Create Patient</button>
-                <button type="reset" value="Reset" class="button is-light">Cancel</button>
-            </p>
+    
+    <div class="container-fluid">
+        <div class="row">
+            @include('layout.errors')
+            <div class="col-md-12">
+                <h1 class="title">Create a New Patient</h1>
+            </div>
+            <div class="col-md-12">
+                <form method="POST" action="/patients">
+                    @csrf
+                    <br>
+                    @include('patients.form')
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <button type="submit" class="btn btn-success">Create Patient</button>
+                                <button type="reset" value="Reset" class="btn btn-secondary">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                </form>
+            </div>
         </div>
-    </form>
     <div>
 @endsection

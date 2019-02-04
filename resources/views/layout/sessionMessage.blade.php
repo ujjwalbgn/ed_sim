@@ -1,13 +1,13 @@
 @if(session()->has('message'))
-    <div class="notification is-primary">
+    <div class="alert alert-success" role="alert">
         {{ session()->get('message') }}
     </div>
     @elseif(session()->has('success'))
-        <div class="notification is-success">
+        <div class="alert alert-success" role="alert">
             {{ session()->get('success') }}
         </div>
     @elseif(session()->has('warning'))
-        <div class="notification is-danger">
+        <div class="alert alert-danger" role="alert">
             {{ session()->get('warning') }}
         </div>
     @endif
