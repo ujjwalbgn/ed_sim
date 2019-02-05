@@ -10,7 +10,6 @@
     <!--Navbar -->
     <nav class="mb-4 navbar navbar-expand-lg navbar-light "> <!--bg-unique-->
         <a class="navbar-brand" href="../"><strong>Edsime</strong></a>
-        
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-3" aria-controls="navbarSupportedContent-3" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -80,7 +79,7 @@
     <!--/.Navbar -->
 <!-- *********************************************** -->
 
-{{--<nav class="navbar is-info" role="navigation">--}}
+<!-- {{--<nav class="navbar is-info" role="navigation">--}}
         {{--<div class="navbar-brand">--}}
             {{--<a class="navbar-item brand-text" href="../">--}}
               {{--<strong>Edsime</strong>--}}
@@ -159,6 +158,6 @@
             {{--</div>--}}
         {{--</div>--}}
     {{--</div>--}}
-{{--</nav>--}}
+{{--</nav>--}} -->
 @include('layout.sessionMessage')
 <!-- END NAV -->

@@ -1,13 +1,13 @@
 <div class="form-row">
-    <div class="form-group col-md-12">
-        <label for="initials">Initials</label>
+        <label for="initials" class="col-md-6">Initials</label>
+    <div class="form-group col-md-6">
         <input type="text" name="initials" class="input {{$errors->has('initials') ? 'is-danger' : ''}}"
             value= @if(isset($signature))"{{$signature->initials}}"@else"{{old('initials')}}"@endif>
     </div>
 </div>
 <div class="form-row">
-    <div class="form-group col-md-12">
-        <label for="initials">Initials</label>
+        <label for="printName" class="col-md-6">Print Name</label>
+    <div class="form-group col-md-6">
         <input type="text" name="printName" class="input {{$errors->has('printName') ? 'is-danger' : ''}}"
             value= @if(isset($signature))"{{$signature->printName}}"@else"{{old('printName')}}"@endif>
     </div>
