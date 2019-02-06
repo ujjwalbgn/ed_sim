@@ -7,6 +7,7 @@
     
     <div class="container-fluid">
         <div class="row">
+        <div class="col-md-12">
             <form>
                 <a class="btn btn-success" href="/patients/{{$patient->id}}/edit">
                     <strong>Edit Patient</strong>
@@ -16,7 +17,7 @@
                             @include('patients.form')
                 </fieldset>
             </form>
-
+        </div>
             {{--List of Meds Assigned to patients--}}
             @include('patients.showPatientMeds')
             @include('patients.showPatientSignature')
