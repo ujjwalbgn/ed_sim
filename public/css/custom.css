@@ -30,3 +30,33 @@
 .btn.btn-md{
    font-size: 1.0rem;
 }
+table td {
+   font-size: 1.2rem;
+}
+
+/* responsive queries */
+
+@media (max-width: 768px) {
+   .button {
+   padding:4px 6px;
+   }
+ }
+ 
+ @media (min-width: 768px) {
+   .button {
+     padding:6px 12px;
+   }
+ }
+   
+ @media (min-width: 992px) {
+   .button {
+     padding:8px 12px;
+   }
+ }
+  
+ @media (min-width: 1200px) {
+   .button {
+     padding:10px 16px;
+   }
+ }
+ 
