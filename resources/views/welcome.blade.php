@@ -1,6 +1,7 @@
 @extends('layout.adminLayout')
 @section('content')
 <div class="container-fluid">
+<br><br><br><br>
 	<div class="row">
 		<div class="col-md-12">
         <!-- <div class="jumbotron"> -->
@@ -27,6 +28,7 @@
                         </strong>
                     </p>
 			</h3>
+            <br><br>
 			<div class="row">
                 @role('admin')
                 <div class="col-sm-12 col-md-12 col-lg-4">
@@ -49,7 +51,7 @@
                 <div class="col-sm-12 col-md-12 col-lg-4">
                 <p>
                     <a href="/sim">
-                        <button type="button" class="btn btn-info btn-block" href="/sim" >Open Simulator</button>
+                        <button type="button" class="btn btn-info btn-md btn-block" href="/sim" >Open Simulator</button>
                     </a>
                 </p>
                 </div>
