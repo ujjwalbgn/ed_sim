@@ -15,12 +15,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     {{--<!-- Bulma Version 0.7.2-->--}}
     {{--<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" /> -->--}}
-    <!-- Custom css -->
+    {{--Custom css --}}
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet" />
 
-<!-- Scripts -->
-    {{--<script src="{{ asset('js/app.js') }}" defer></script>--}}
-
+ {{--Scripts--}}
     @include('helpers.googleAnalytics')
 
 </head>

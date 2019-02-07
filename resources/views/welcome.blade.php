@@ -4,7 +4,7 @@
 <br><br>
 	<div class="row">
 		<div class="col-md-12">
-        <!-- <div class="jumbotron"> -->
+        {{--<div class="jumbotron">--}}
             <h3 class="text-center">
                     <p class="title">
                         Welcome to EdSime
@@ -60,7 +60,7 @@
                 </div>
                 </div>
 			</div>
-		<!-- </div> -->
+		{{--</div>--}}
         </div>
 	</div>
 </div>

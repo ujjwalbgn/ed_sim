@@ -10,9 +10,9 @@
                 <div class="card-header">
                     <h4>Select the you would like to assign to {{$patient->name}}</h4></div>
                     @include('layout.errors')
-                <!-- <div> -->
+                {{--<!-- <div> -->--}}
                     @foreach($meds as $med)
-                        <!-- <div> -->
+                        {{--<!-- <div> -->--}}
                             <form method="post" action="/patients/{{$patient->id}}/med/{{$med->id}}">
                                 @method('PATCH')
                                 @csrf
@@ -22,14 +22,14 @@
                                 </label>
                                 </ul>
                             </form>
-                        <!-- </div> -->
+                        {{--<!-- </div> -->--}}
                     @endforeach
-                <!-- </div> -->
+                {{--<!-- </div> -->--}}
             </div>
         </div>
-        <!-- col -->
+        {{--<!-- col -->--}}
     </div>
-    <!-- row -->
+    {{--<!-- row -->--}}
 </div>
-<!-- container -->
+{{--<!-- container -->--}}
 @endsection

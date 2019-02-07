@@ -24,11 +24,11 @@
         <form method="post" action="/patients/{{$patient->id}}">
             @method('DELETE')
             @csrf
-            <!-- <div class="field"> -->
+            {{--<!-- <div class="field"> -->--}}
                 <div class="text-center">
                     <button type="submit" class="btn btn-danger">Delete Patient</button>
                 </div>
-            <!-- </div> -->
+            {{--<!-- </div> -->--}}
         </form>
     </div>
 @endsection

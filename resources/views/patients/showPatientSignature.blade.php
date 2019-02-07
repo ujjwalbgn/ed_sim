@@ -18,10 +18,6 @@
         <th>
             Print Name
         </th>
-        {{--<th>--}}
-            {{--Time--}}
-        {{--</th>--}}
-        {{--<th>Description</th>--}}
         <th>
         </th>
     </tr>
@@ -33,12 +29,6 @@
         <th><a href="/signatures/{{$signature->id}}">
                 {{$signature->printName}}
             </a></th>
-            {{--<th>--}}
-                {{--{{$signature->time}}--}}
-            {{--</th>--}}
-            {{--<th>--}}
-                {{--{{$signature->description}}--}}
-            {{--</th>--}}
             <th>
             <form method="post" action="/patients/{{$patient->id}}/signature/{{$signature->id}}">
                     @method('DELETE')

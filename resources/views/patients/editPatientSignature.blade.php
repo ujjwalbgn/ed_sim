@@ -11,9 +11,9 @@
                     <h4>Select the you would like to assign to {{$patient->name}}</h4>
                 </div>
                 @include('layout.errors')
-                <!-- <div> -->
+                {{--<!-- <div> -->--}}
                     @foreach($signatures as $signature)
-                        <!-- <div> -->
+                        {{--<!-- <div> -->--}}
                             <form method="post" action="/patients/{{$patient->id}}/signature/{{$signature->id}}">
                                 @method('PATCH')
                                 @csrf
@@ -22,14 +22,14 @@
                                     {{$signature->printName}}
                                 </label>
                             </form>
-                        <!-- </div> -->
+                        {{--<!-- </div> -->--}}
                     @endforeach
-                <!-- </div> -->
+                {{--<!-- </div> -->--}}
             </div>
         </div>
-        <!-- col -->
+        {{--<!-- col -->--}}
     </div>
-    <!-- row -->
+    {{--<!-- row -->--}}
 </div>
-<!-- container -->
+{{--<!-- container -->--}}
 @endsection
