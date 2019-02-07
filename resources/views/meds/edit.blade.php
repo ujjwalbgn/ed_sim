@@ -3,7 +3,7 @@
 @include('layout.adminMenu')
 
 @section('content')
-    <h1 class="title">Edit: {{$med->name}}</h1>
+    <h4 class="title">Edit: <strong>{{$med->name}}</strong></h4>
 
     @include('layout.errors')
 
