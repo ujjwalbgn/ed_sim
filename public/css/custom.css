@@ -7,3 +7,10 @@ table td {
 table.table a{
   color: #007bff;
 }
+input[type=text]{
+ border-radius: 5px;
+}
+.border-primary{
+  border:3px solid #007bff!important;
+
+}
