@@ -74,7 +74,7 @@
             <div class="col-lg-12">
                 <h5 class="is-5">Scheduled Medication</h5>
                 <table class="table table-hover">
-                    <thead>
+                    <thead class="table-active">
                     <tr>
                         {{--<th scope="col">--}}
                         {{--No.--}}
@@ -85,7 +85,7 @@
                         <th scope="col">
                             Medication
                         </th>
-                        <th bgcolor="gray" scope="col">
+                        <th style="background-color:#d2d2d2;" scope="col">
                             Yesterday
                         </th>
                         <th scope="col">
@@ -108,7 +108,7 @@
                                     {{$scheduledMeds->description}}
                                 </div>
                             </td>
-                            <td bgcolor="gray">
+                            <td style="background-color:#d2d2d2;">
                             <em>{{$scheduledMeds->timeYesterday}}</em>
                             </td>
                             <td>
@@ -142,7 +142,7 @@
                         <th scope="col">
                             Medication
                         </th>
-                        <th bgcolor="gray" scope="col">
+                        <th style="background-color:#d2d2d2;" scope="col">
                             Yesterday
                         </th>
                         <th scope="col">
@@ -166,7 +166,7 @@
                                     {{$prnMeds->description}}
                                 </div>
                             </td>
-                            <td bgcolor="gray">
+                            <td style="background-color:#d2d2d2;">
                                 {{$prnMeds->timeYesterday}}
                             </td>
                             <td>
@@ -189,9 +189,9 @@
                 
         @if(isset($signatures))
             <hr>
-        Signatures
+        <h5 class="is-5">Signatures</h5>
             <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
-                <thead>
+                <thead class='table-active'>
                 <tr>
                     <th>Initials</th>
                     <th>Print Name</th>
