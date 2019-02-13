@@ -23,6 +23,9 @@
                         <th>
                             Print Name
                         </th>
+                        <th>
+                            Signature
+                        </th>
                         <th></th>
                     </tr>
                 </thead>
@@ -37,6 +40,9 @@
                             </a></td>
                         <td>
                             {{$signature->printName}}
+                        </td>
+                        <td>
+                            <div class="sign">{{$signature->signature}}</div>
                         </td>
                         <td>
                             <a href="/signature/{{$signature->id}}">

@@ -16,7 +16,8 @@ class CreateSignaturesTable extends Migration
         Schema::create('signatures', function (Blueprint $table) {
             $table->increments('id');
             $table->string('initials');
-            $table->string('printName');
+            $table->string('printName')->nullable();
+            $table->string('signature')->nullable();
             $table->timestamps();
         });
     }

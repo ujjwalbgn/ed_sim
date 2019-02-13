@@ -3,22 +3,22 @@
 @include('layout.simMenu')
 
 @section('content')
-<div class="container">
-        <div class="row">
-  		    <div class="col-lg-12">
-              <br>
-            @include('layout.sessionMessage')
-        </div>
-    </div>
-</div>
-<br>
     <div class="container">
         <div class="row">
-  		    <div class="col-lg-12">  
+            <div class="col-lg-12">
+                <br>
+                @include('layout.sessionMessage')
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
                 <h5 class="title">Patient's Profile</h5>
             </div>
             <div class="col-lg-12"><em>
-                <h2>{{$patient->name}}</h2></em>
+                    <h2>{{$patient->name}}</h2></em>
             </div>
             <div class="col-sm-12 col-md-12 col-lg-4">
                 <div class="row">
@@ -52,16 +52,16 @@
             <div class="col-lg-12">
                 <div class="row">
                     <div class="col-6">
-                    <h4>Medication Assigned</h4>
+                        <h4>Medication Assigned</h4>
                     </div>
                     <div class="col-6">
-                    @include('layout.errors')
-                    <form method="post" action="/sim/patient/{{$patient->id}}/med" style="margin-bottom: 1em">
-                        @csrf
-                        <span class="">
+                        @include('layout.errors')
+                        <form method="post" action="/sim/patient/{{$patient->id}}/med" style="margin-bottom: 1em">
+                            @csrf
+                            <span class="">
                             <input class="input is-large {{$errors->has('level') ? 'is-danger' : ''}} border border-primary" type="text" name="barcode" placeholder="   Scanner Medication Barcode" required>
                         </span>
-                    </form>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -93,7 +93,7 @@
                     </tr>
                     </thead>
                     <tbody>
-                        @foreach($scheduledMeds as $index => $scheduledMeds)
+                    @foreach($scheduledMeds as $index => $scheduledMeds)
                         <tr>
                             {{--<th>{{$index+1}}</th>--}}{{-- (+1) beacuse $index starts from 0 --}}
                             <th scope="row"><em>{{$scheduledMeds->dateTimeRNVerified}}</em></th>
@@ -104,26 +104,26 @@
                                 </div>
                             </td>
                             <td style="background-color:#d2d2d2;">
-                            <em>{{$scheduledMeds->timeYesterday}}</em>
+                                <em>{{$scheduledMeds->timeYesterday}}</em>
                             </td>
                             <td>
                                 <em>{{$scheduledMeds->timeToday}}</em>
                             </td>
                             <td>
-                            <em>{{$scheduledMeds->timeTomorrow}}</em>
+                                <em>{{$scheduledMeds->timeTomorrow}}</em>
                             </td>
                         </tr>
-                        @endforeach
+                    @endforeach
                     </tbody>
                 </table>
             </div>
         </div>
-        
+
         <div class="row">
             <div class="col-lg-12">
                 <h5 class="is-5">PRN Medication</h5>
                 <table class="table table-hover">
-                    <thead>
+                    <thead class='table-active'>
                     <tr>
                         {{--<th scope="col">--}}
                         {{--No.--}}
@@ -173,38 +173,43 @@
         </div>
         <div class="row">
             <div class="col-lg-12">
-                
-        @if(isset($signatures))
-            <hr>
-        <h5 class="is-5">Signatures</h5>
-            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
-                <thead class='table-active'>
-                <tr>
-                    <th>Initials</th>
-                    <th>Print Name</th>
-                </tr>
-                </thead>
-                <tbody>
-                @foreach($signatures as$signature)
 
-                    <tr>
-                    <td>
-                        <em>{{$signature->initials}}</em>
-                    </td>
-                    <td>
-                        {{$signature->printName}}
-                    </td>
-                    </tr>
-                    @endforeach
+                @if(isset($signatures))
+                    <hr>
+                    <h5 class="is-5">Signatures</h5>
+                    <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                        <thead class='table-active'>
+                        <tr>
+                            <th>Initials</th>
+                            <th>Print Name</th>
+                            <th>Signature</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        @foreach($signatures as$signature)
 
-                </tbody>
-            </table>
-        @endif
-    </div>
-    <br>
-    <br>
-    <br>
+                            <tr>
+                                <td>
+                                    <em>{{$signature->initials}}</em>
+                                </td>
+                                <td>
+                                    {{$signature->printName}}
+                                </td>
+                                <td><div class="sign">
+                                        {{$signature->signature}}
+                                    </div>
+                                </td>
+                            </tr>
+                        @endforeach
+
+                        </tbody>
+                    </table>
+                @endif
             </div>
+            <br>
+            <br>
+            <br>
         </div>
+    </div>
     </div>
 @endsection

@@ -9,6 +9,7 @@ class Signature extends Model
     protected $fillable=[
         'initials',
         'printName',
+        'signature',
     ];
 
     public function patient()
