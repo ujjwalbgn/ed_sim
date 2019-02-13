@@ -22,9 +22,6 @@
                             Name
                         </th>
                         <th>
-                            Med Time
-                        </th>
-                        <th>
                             Barcode
                         </th>
                         <th></th>
@@ -39,9 +36,6 @@
                             <a href="/meds/{{$med->id}}">
                                 {{$med->name}}
                             </a>
-                        </td>
-                        <td>
-                            {{$med->time}}
                         </td>
                         <td>
                             {{$med->barcode}}

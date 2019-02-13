@@ -1,4 +1,3 @@
-<form>
     <div class="form-row text-left">
         <label for="dateTimeRNVerified" class="col-md-6">Date/Time RN Verified</label>
         <div class="col-md-6">
@@ -53,4 +52,4 @@
                 value= @if(isset($med))"{{$med->barcode}}"@else"{{old('barcode')}}">@endif
     </div>
     </div>
-</form>
+

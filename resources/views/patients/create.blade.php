@@ -12,7 +12,6 @@
             <div class="col-md-12">
                 <form method="POST" action="/patients">
                     @csrf
-                    <br>
                     @include('patients.form')
                     <div class="container">
                         <div class="row">

@@ -15,14 +15,14 @@
     <div class="form-row text-left">
         <label for="diagnosis" class="col-md-3">Diagnosis</label>
         <div class="col-md-9">
-        <input type="text" name="diagnosis" class="input {{$errors->has('diagnosis') ? 'is-danger' : ''}}" required
+        <input type="text" name="diagnosis" class="input {{$errors->has('diagnosis') ? 'is-danger' : ''}}"
                 value= @if(isset($patient))"{{$patient->diagnosis}}"@else"{{old('diagnosis')}}"@endif>
         </div>
     </div>
     <div class="form-row text-left">
         <label for="provider" class="col-md-3">Provider</label>
         <div class="col-md-9">
-        <input type="text" name="provider" class="input {{$errors->has('provider') ? 'is-danger' : ''}}" required
+        <input type="text" name="provider" class="input {{$errors->has('provider') ? 'is-danger' : ''}}"
                 value= @if(isset($patient))"{{$patient->provider}}"@else"{{old('provider')}}"@endif>
         </div>
     </div>
