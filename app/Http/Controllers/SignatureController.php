@@ -31,6 +31,7 @@ class SignatureController extends Controller
         $attributes=  request()->validate([
             'initials' => ['required'],
             'printName' => ['required'],
+            'signature' => ['required'],
 
         ]);
         Signature::create($attributes);
@@ -49,6 +50,7 @@ class SignatureController extends Controller
         $this->validate($request,[
             'initials' => ['required'],
             'printName' => ['required'],
+            'signature' => ['required'],
         ]);
 
         $signature->fill($request->all())->save();

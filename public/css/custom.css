@@ -12,5 +12,9 @@ input[type=text]{
 }
 .border-primary{
   border:3px solid #007bff!important;
-
 }
+
+.sign{
+    font-family: 'Cookie', cursive;
+}
+
