@@ -9,7 +9,7 @@
             <input type="text" name="name" class="input {{$errors->has('name') ? 'is-danger' : ''}}" required
                 value= @if(isset($med))"{{$med->name}}"@else "{{old('name')}}"@endif>
         </div>
-    </div><p></p>
+    </div>
     <div class="form-row text-left">
         <label for="name" class="col-md-6">Medication Type</label>
         <div class="col-md-6">

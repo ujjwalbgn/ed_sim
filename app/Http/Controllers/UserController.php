@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\User;
 use Spatie\Permission\Models\Role;
 use Session;
+use Illuminate\Support\Facades\Hash;
+
 
 
 class UserController extends Controller
@@ -85,8 +87,12 @@ class UserController extends Controller
             'password'=>'required|min:6|confirmed'
         ]);
 
-        $input = $request->only(['name', 'email', bcrypt('password')]); //Retreive the name, email and password fields
-        $user->fill($input)->save();
+//        dd($request->only(['name', 'email', Hash::make('password')]));
+
+        $user->name = request('name');
+        $user->email = request('email');
+        $user->password = bcrypt(request('password'));
+        $user->save();
 
 
         $roles = $request['roles']; //Retreive all roles
