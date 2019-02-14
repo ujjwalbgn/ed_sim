@@ -4,6 +4,10 @@
 
 @section('content')
 
+    <div class="btn-outline-light">
+        <a href="{{ URL::previous() }}">Go Back</a>
+    </div>
+<br>
     <div class='col-lg-4 col-lg-offset-4'>
 
         <h1><i class='fa fa-user-plus'></i> Edit {{$user->name}}</h1>
@@ -25,8 +29,9 @@
 
                 <label for="role">Role</label>
 
-                <select name="roles">
-                    @foreach ($roles as $role)
+                <select name="roles"  class="input {{$errors->has('type') ? 'is-danger' : ''}}" required>
+                    <option></option>
+                @foreach ($roles as $role)
                     <option value="{{$role->id}}">{{ucfirst($role->name)}}</option><br>
                     @endforeach
                 </select>
