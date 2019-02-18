@@ -17,7 +17,7 @@
         @foreach($patients as $patient)
         <img src="data:image/png;base64,{{DNS1D::getBarcodePNG($patient->barcode, "C128",1,35)}}"/>
             <br>
-            {{$patient->name}}
+            {{$patient->name}} Level: {{$patient->level}}
             <br><br>
             @endforeach
            </div>
