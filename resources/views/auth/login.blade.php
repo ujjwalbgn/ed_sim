@@ -64,6 +64,9 @@
                                 @endif
                             </div>
                         </div>
+                        <div class="text-md-center">
+                                By logging in you agree with <a href="https://edsime.com/termOfUse" target="_blank">terms of use </a> and <a href="https://edsime.com/dataPolicy" target="_blank"> data policy.</a>
+                            </div>
                     </form>
                 </div>
             </div>
