@@ -17,7 +17,7 @@
                             <div class="input-group-prepend ">
                                 <span class="input-group-text" id="inputGroup-sizing-sm"><i class="fa fa-search"></i>&nbsp </span>
                             </div>
-                            <input type="text" class="form-control border border-primary" id="search" name="Scan" placeholder="Scan barcod or enter patient's name here" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                            <input type="text" class="form-control border border-primary" id="search" name="Scan" placeholder="Scan barcod or enter patient's name here" aria-label="Small" aria-describedby="inputGroup-sizing-sm" autofocus="autofocus">
                         </div>
                     </div>
                 </div>
